@@ -6,6 +6,11 @@ const categorySchema= mongoose.Schema(
             type: String,
             required: true,
         },
+
+        image:{
+            type: String,
+            required: true
+        },
         descripton: {
             type: String,
             required: true,
@@ -14,6 +19,6 @@ const categorySchema= mongoose.Schema(
     }
 );
 
-const Category= mongoose.model("Categories", CategorySchema)
+const Category= mongoose.model("categories", categorySchema)
 
 export default Category;
