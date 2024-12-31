@@ -148,3 +148,24 @@ message: "Forbidden"
 }
 
 
+export function getAnimalsByCategory (req,res){
+    const category = req.params.category
+    Animal.find({category:category}).then(
+        (result)=>{
+            res.json(
+                {
+                    animals : result
+                }
+            )
+        }
+    ).catch(
+        ()=>{
+            res.json(
+                {
+                    message: "Failed to get animals"
+                }
+            )
+        }
+    )
+      
+ }   

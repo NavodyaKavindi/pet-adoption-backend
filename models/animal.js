@@ -42,6 +42,6 @@ notes: {
 
 )
 
-const Animals = mongoose.model("Animals", animalSchema)
+const Animal = mongoose.model("Animals", animalSchema)
 
 export default Animal;
