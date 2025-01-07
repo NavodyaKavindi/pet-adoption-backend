@@ -10,7 +10,8 @@ export function createAnimal  (req,res){
     }
 
 
-const newAnimal = newAnimal (req.body)
+const animalData = req.body
+const newAnimal = new Animal(animalData)
 newAnimal.save().then(
 
     (result)=>{

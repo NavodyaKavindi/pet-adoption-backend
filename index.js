@@ -8,7 +8,7 @@ import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
 import categoryRouter from './routes/categoryRoute.js'
 import animalRouter from './routes/animalRoute.js'
-
+import adoptionRouter from './routes/adoptionRoute.js'
 dotenv.config()
 
 
@@ -55,7 +55,7 @@ app.use ("/api/users",userRouter)
 app.use("/api/gallery",galleryItemRouter)
 app.use("/api/category",categoryRouter)
 app.use("/api/animals", animalRouter)
-   
+app.use("/api/adoptions", adoptionRouter)   
 
 app.listen(5000,(req,res)=>{
     console.log("Server is running on port 5000")

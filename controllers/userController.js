@@ -97,3 +97,14 @@ export function isAdminValid(req){
     return true;  
 }
 
+export function isAdopterValid(req){
+    if(req.user == null){
+        return false
+    }
+    console.log(req.user)
+    if(req.user.type !="adopter"){
+        return false
+    }
+    return true;
+}
+

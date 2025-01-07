@@ -47,6 +47,6 @@ const adoptionSchema= mongoose.Schema({
 
 }
 )
-const Adoption= mongoose.model("adoptionS", adoptionSchema)
+const Adoption= mongoose.model("adoptions", adoptionSchema)
 
 export default Adoption;
