@@ -9,10 +9,13 @@ import dotenv from 'dotenv'
 import categoryRouter from './routes/categoryRoute.js'
 import animalRouter from './routes/animalRoute.js'
 import adoptionRouter from './routes/adoptionRoute.js'
+import cors from 'cors'
 dotenv.config()
 
 
 const app = express()
+
+app.use(cors())
 
 app.use(bodyParser.json())
 
