@@ -75,7 +75,7 @@ export function getCategory(req,res){
     Category.find().then(
         (result)=>{
             res.json({
-                Categories: result 
+                categories: result 
             }
                 
             )

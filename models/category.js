@@ -11,7 +11,7 @@ const categorySchema= mongoose.Schema(
             type: String,
             required: true
         },
-        descripton: {
+        description: {
             type: String,
             required: true,
 
